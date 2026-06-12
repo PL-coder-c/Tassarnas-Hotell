@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyhetsbrev och Hundtips - Tassarnas Hotell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">Tassarnas<span>Hotell</span></a></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="produkt-1.html">Hunddagis</a></li>
+                    <li><a href="produkt-2.html">Hundpensionat</a></li>
+                    <li><a href="nyhetsbrev.html" class="active">Nyhetsbrev</a></li>
+                    <li><a href="kontakt.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="max-width: 600px;">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <!-- Relevant illustration för nyhetsbrev / e-postinsamling -->
+            <svg class="placeholder-img" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" style="max-height: 150px; margin: 0 auto 20px;">
+                <rect width="100%" height="100%" fill="#e2e8f0" rx="8"/>
+                <path d="M100,50 L250,130 L400,50" stroke="#319795" stroke-width="4" fill="none"/>
+                <rect x="90" y="45" width="320" height="110" stroke="#319795" stroke-width="4" fill="none" rx="4"/>
+            </svg>
+            <h2>Prenumerera på vårt nyhetsbrev</h2>
+            <p>Få exklusiva tips om hundbeteende, hälsa samt förtur till lediga dagisplatser i Stockholm.</p>
+        </div>
+
+        <div class="form-container">
+            <!-- Det här formuläret är optimerat för att senare bytas ut mot en Mailchimp- eller HubSpot-form för e-postinsamling -->
+            <form id="newsletter-form" method="GET">
+                <div class="form-group">
+                    <label for="newsletter-email">E-postadress *</label>
+                    <input type="email" id="newsletter-email" name="email" required placeholder="din.epost@domän.se">
+                </div>
+                <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" id="consent" name="consent" required style="width: auto;">
+                    <label for="consent" style="margin-bottom: 0; font-weight: normal; font-size: 13px;">Jag godkänner att Tassarnas Hotell skickar mig information och marknadsföring.</label>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Anmäl prenumeration</button>
+            </form>
+        </div>
+        
+        <p style="text-align: center; margin-top: 30px; font-size: 14px; color: #718096;">
+            <a href="index.html" style="color: #319795; text-decoration: none;">&larr; Tillbaka till startsidan</a>
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tassarnas Hotell AB. Perfekt sida för att testa Mailchimp-integrationer och målgruppsbyggande.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
